@@ -3,9 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-.body{
+body{
     background-color: rgba(119, 119, 119, 0.849);
-    height: 100vh;
     padding: 30px 20px;
 }
 .header{
@@ -40,9 +39,11 @@ form{
 .form_content > div label{
     font-weight: thin;
     font-size: 13px;
+    margin: 0;
     color: rgb(187, 187, 187);
 }
 .form_content > div input{
+    margin-bottom: 13px;
     outline: none;
     background-color: beige;
     text-indent: 9px;
@@ -85,9 +86,10 @@ form{
 }
 .person{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     background-color: beige;
    padding: 3px 30px;
    margin: 10px 0;
@@ -109,5 +111,27 @@ form{
 }
 .person button:hover{
     color: rgb(68, 67, 67);
+}
+@media (max-width:405px) {
+    .person{
+       
+       padding: 3px 20px;
+       margin: 10px 0;
+       border-radius: 10px;
+    }
+    .person h3{
+        font-size: 20px;
+    }
+    .person p{
+        font-size: 11px;
+    }
+    .count{
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 

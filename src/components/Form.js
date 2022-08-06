@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import Person from "./Person";
 
 const Form = () => {
     // states for input fields
@@ -91,22 +92,7 @@ useEffect(() => {
             <button type="submit">Submit</button>
           </div>
         </form>
-        <section className="people_container">
-          {people.map((person) => {
-            const { id, username, email } = person;
-            return (
-              <div key={id} className="person">
-                <div >
-                <h3>{username}</h3>
-                <p>{email}</p>
-              </div>
-              <div>
-                <button onClick={() =>removePerson(id)}>Remove</button>
-              </div>
-              </div>
-            );
-          })}
-        </section>
+          <Person users={people} remove={removePerson}/>
       </article>
     </>
   );
