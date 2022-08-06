@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: rgba(119, 119, 119, 0.849);
+    height: 100vh;
+    padding: 30px 20px;
+}
+.header{
+    background-color: black;
+    color: beige;
+    font-size: 20px;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 15px;
+    border-radius: 6px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+form{
+    background-color: rgb(92, 92, 92);
+    width: fit-content;
+    height: 300px;
+    border-top-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 12px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.form_content > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_content > div label{
+    font-weight: thin;
+    font-size: 13px;
+    color: rgb(187, 187, 187);
+}
+.form_content > div input{
+    outline: none;
+    background-color: beige;
+    text-indent: 9px;
+    border-radius: 4px;
+    border: 2px solid beige;
+    padding: 4px 0;
+    transition: 0.3s;
+    width: 250px;
+}
+.form_content > div input:focus{
+    box-shadow: 2px 1px 8px 1px rgba(209, 209, 209, 0.856);
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 13px;
+}
+.btn button{
+    border: none;
+    background-color: beige;
+    padding: 5px 25px;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    border-radius: 4px;
+}
+.count{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.people_container{
+   width: fit-content;
+   margin: auto;
+   margin-top: 30px;
+}
+.person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: beige;
+   padding: 3px 30px;
+   margin: 10px 0;
+   border-radius: 10px;
+}
+.person h3{
+    font-size: 23px;
+}
+.person h3::first-letter{
+    text-transform: uppercase;
+}
+.person button{
+    background: none;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.575);
+    transition: 0.4s;
+}
+.person button:hover{
+    color: rgb(68, 67, 67);
+}
+
